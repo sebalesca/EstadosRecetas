@@ -48,7 +48,7 @@ rl.on('line', function(line) {
         case '1':
             //MUESTRA LOS DATOS DE LA RECETA
             rl.question("Introduzca el IdReceta a consultar: ",function(idreceta){
-              estado.verEstado(idreceta,function (error,Receta){
+              estado.verEstado(idreceta,function(error,Receta){
                console.log('Receta ACES'.yellow);
                console.dir(Receta);
                console.log('Detalle Receta'.yellow);
@@ -60,8 +60,18 @@ rl.on('line', function(line) {
             
             break;
         case '2':
-            console.log('En desarrollo Muchachio....coming soon!');
-            opciones();
+            rl.question("Introduzca el Codigo de la Farmacia a consultar: ",function(idFarmacia){
+              estado.verEstadoByFarmacia(idFarmacia,function(err,recetas){
+                console.log(recetas);
+                 opciones();
+
+              });
+
+              }
+
+          );
+            //console.log('En desarrollo Muchachio....coming soon!');
+           
             //ACTUALIZA UNA RECETA SEGUN EL IDRECETA
             /*
             rl.question("Introduzca el id de la receta: ".input, function(idReceta) {

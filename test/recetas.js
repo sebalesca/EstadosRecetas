@@ -1,0 +1,3 @@
+describe('Recetas Pendientes', function () {
+	
+});

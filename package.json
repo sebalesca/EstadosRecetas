@@ -4,7 +4,7 @@
   "description": "Consulta el estado de las recetas en webservices de ACES",
   "main": "consola.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/recetas.js"
   },
   "scripts":{
     "start": "nodemon consola.js"
