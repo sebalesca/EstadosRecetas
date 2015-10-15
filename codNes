@@ -48,11 +48,13 @@
             s_Estado = IIf(IsDBNull(pds.Tables(0).Rows(0).Item("Estado")), "", pds.Tables(0).Rows(0).Item("Estado"))
             s_idRechazo = IIf(IsDBNull(pds.Tables(0).Rows(0).Item("idRechazo")), 0, pds.Tables(0).Rows(0).Item("idRechazo"))
             s_idDrogueria = IIf(IsDBNull(pds.Tables(0).Rows(0).Item("idDrogueria")), 0, pds.Tables(0).Rows(0).Item("idDrogueria"))
+            
             If s_idDrogueria <> 0 Then
                 s_Drogueria = GetDrogueria(s_idDrogueria)
             Else
                 s_Drogueria = ""
             End If
+
             s_FechaCAMOyTE = IIf(IsDBNull(pds.Tables(0).Rows(0).Item("FechaCAMOyTE")), Now(), pds.Tables(0).Rows(0).Item("FechaCAMOyTE"))
             FecCamoyte = "CONVERT(DATETIME, '" & s_FechaCAMOyTE.Year & "-" & s_FechaCAMOyTE.Month & "-" & s_FechaCAMOyTE.Day & " 00:00:00', 102)"
             s_FechaComunicacionDrogueria = IIf(IsDBNull(pds.Tables(0).Rows(0).Item("FechaComunicacionDrogueria")), Now(), pds.Tables(0).Rows(0).Item("FechaComunicacionDrogueria"))
