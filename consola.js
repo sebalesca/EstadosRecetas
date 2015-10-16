@@ -25,7 +25,7 @@ colors.setTheme({
 
 function opciones() {
     console.log(' 1- Consultar Receta'.help);
-    console.log(' 2- Consultar Recetas Pendientes por Farmacia'.help);
+    console.log(' 2- Consultar ETADOS Recetas Pendientes por Farmacia'.help);
     //console.log(' 2- Actualizar Receta'.help);
     //console.log(' 3- Actualizar Pendientes'.help);
     //console.log(' 4- Actualizar Autorizadas'.help);

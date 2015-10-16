@@ -1,10 +1,10 @@
 {
   "name": "EstadosRecetas",
   "version": "0.0.1",
-  "description": "Consulta el estado de las recetas en webservices de ACES",
+  "description": "Consulta el estado de la Recetas en WS de ACES, con posibilidad de actualizar en Farma",
   "main": "consola.js",
   "scripts": {
-    "test": "mocha test/recetas.js"
+    "test": ""
   },
   "scripts":{
     "start": "nodemon consola.js"
