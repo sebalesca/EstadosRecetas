@@ -8,6 +8,9 @@ Optimizacion de actualizacion de estados de las recetas.
   $ git clone https://github.com/Farmalive/daemon-a2f-node.git
   $ cd daemon-a2f-node
   $ npm install
+  $ mkdir logs
+  $ cd lib && mkdir config
+  
 ```
 
 ## Ejecución
