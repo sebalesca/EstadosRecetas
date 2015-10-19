@@ -1,12 +1,23 @@
 # Demonio Aces-to-Farma
 
-> Llena Sebastián aunque me encanta hacer Markup
-
+Optimizacion de actualizacion de estados de las recetas.
 
 ## Instalación
-``` bash
-npm install -g daemon-a2f-node
+
+```shell
+  $ git clone https://github.com/Farmalive/daemon-a2f-node.git
+  $ cd daemon-a2f-node
+  $ npm install
 ```
 
-**Aguante RIVER
-- Boca PUTO
+## Ejecución
+
+```shell
+  $ npm start
+```
+
+## Pruebas
+
+```shell
+  $ npm test
+```
