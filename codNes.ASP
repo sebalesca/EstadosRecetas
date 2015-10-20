@@ -106,7 +106,7 @@
                 Select Case s_idEstado
                     '1 - Validada - Pendiente aprobación administrativa (Buzón)
                     Case 1
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
