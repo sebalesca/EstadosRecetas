@@ -2,6 +2,8 @@
 
 Optimizacion de actualizacion de estados de las recetas.
 
+
+
 ## Instalación
 
 ```shell
@@ -10,7 +12,7 @@ Optimizacion de actualizacion de estados de las recetas.
   $ npm install
   $ mkdir logs
   $ cd lib && mkdir config
-  
+
 ```
 
 ## Ejecución

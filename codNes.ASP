@@ -106,7 +106,7 @@
                 Select Case s_idEstado
                     '1 - Validada - Pendiente aprobación administrativa (Buzón)
                     Case 1
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -142,7 +142,6 @@
                             End Try
                         End Using
                     Case 2 'Validada con error
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -186,7 +185,7 @@
                             End Try
                         End Using
                     Case 3 'Receta previamente procesada por CAMOYTE
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -240,7 +239,7 @@
                             End Try
                         End Using
                     Case 4  'Aprobada
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -347,7 +346,7 @@
                             End Try
                         End Using
                     Case 5  'Observada
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -435,7 +434,7 @@
                             End Try
                         End Using
                     Case 10 'Trámite inexistente
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -471,7 +470,7 @@
                             End Try
                         End Using
                     Case 11 'Trámite pendiente de validación
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -507,7 +506,7 @@
                             End Try
                         End Using
                     Case 12 'Receta anulada
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -544,7 +543,7 @@
                         End Using
                     Case 13 'Aprobada administrativamente
                         'MessageBox.Show("13 - Aprobada administrativamente", "Mensaje")
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -628,7 +627,7 @@
                             End Try
                         End Using
                     Case 14 'En Tramite verificando documentacion afiliado
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -671,7 +670,7 @@
                             End Try
                         End Using
                     Case 15 'En Tramite APROSS
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
@@ -707,7 +706,7 @@
                             End Try
                         End Using
                     Case 18 'Observada - Se requiere aut. previa por el Instituto mediante envío de expediente por vía de excepción, acercarse a la deleg. PAMI a tramitarlo, por RP solicitado discont., debe modificar o realizar nueva receta
-                        Using connection As New SqlConnection("Data Source=camoytes52; User ID=te; Password=C4m0yT3Q~20;Initial Catalog=Farma;")
+                        
                             Try
                                 connection.Open()
                                 Dim command As SqlCommand = connection.CreateCommand()
