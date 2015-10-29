@@ -2,6 +2,10 @@
 
 Optimizacion de actualizacion de estados de las recetas.
 
+## Uso
+
+# Opciones  
+
 
 
 ## Instalación
