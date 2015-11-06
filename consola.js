@@ -1,6 +1,7 @@
 var readline = require('readline');
 var estado = require('./lib/verEstados');
 var colors = require('colors');
+var Receta = require('./lib/verEstados/lib/actualizarReceta');
 
 
 //var actualiza = require('./actualizarReceta');
@@ -46,9 +47,9 @@ rl.on('line', function(line) {
         case '1':
             //MUESTRA LOS DATOS DE LA RECETA
             rl.question("Introduzca el IdReceta a consultar: ", function(idreceta) {
-                estado.verEstado(idreceta, function(error, Receta) {                    
+                estado.verEstado(idreceta, function(error, Receta) {
                     console.log('Detalle Receta'.yellow);
-                    console.log('Estado de la Receta: '.help + Receta.imprimir.estado.help);
+                    console.log('Estado de la Receta: '.help + Receta.imprimir.estado.error);
                     console.log(Receta.imprimir);
                     opciones();
                 });
@@ -69,22 +70,19 @@ rl.on('line', function(line) {
             );
             //console.log('En desarrollo Muchachio....coming soon!');
 
-          
+
             /*
-            */
+             */
             break;
         case '3':
 
         case '4':
-          //ACTUALIZA UNA RECETA SEGUN EL IDRECETA
-        rl.question("Introduzca el id de la receta: ", function(idReceta) {
-                actualiza.actualizarReceta(idReceta);
-               
-                
+            //ACTUALIZA UNA RECETA SEGUN EL IDRECETA
+            rl.question("Ingrese el ID de la receta Que desea ACTUALIZAR: ".info, function(idReceta) {
+                Receta.actualizarReceta(idReceta);
                 opciones();
-
             });
-        break;
+            break;
         case '5':
             //console.log('En desarrollo Muchachio....coming soon!');
             //opciones();

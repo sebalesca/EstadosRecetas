@@ -1,0 +1,93 @@
+//observadas
+{
+    "Table": {
+
+        "idRecetaFLV": "9103732",
+        "idConvenioFLV": "1",
+        "idEstado": "5",
+        "Estado": "Observada",
+        "FechaCAMOyTE": "2015-11-02T15:31:08.757-03:00",
+        "RegID": "780eb2e9-c3af-4558-a975-0def148a0088"
+    },
+    "Table2": [{
+
+        "idRecetaFLV": "9103732",
+        "idObservacion": "121",
+        "DescObservacion": "Afiliado nuevo enviar historia"
+    }, {
+
+        "idRecetaFLV": "9103732",
+        "idObservacion": "127",
+        "DescObservacion": "Sello del medico ilegible"
+    }, {
+
+        "idRecetaFLV": "9103732",
+        "idObservacion": "228",
+        "DescObservacion": "Enviar historia clinica y bacilo acido alcohol resistente"
+    }]
+},
+//buzon 
+"Receta": {
+    "Table": {
+
+        "idRecetaFLV": "9103732",
+        "idConvenioFLV": "1",
+        "idEstado": "1",
+        "Estado": "validadas pendientes de autorizacion (buzon)",
+        "FechaCAMOyTE": "2015-11-02T15:31:08.757-03:00",
+        "RegID": "781eb2e9-c3af-4558-a975-0def148a0088"
+    }
+},
+//Valdiada con error 
+"Receta": {
+    "Table": {
+        "idRecetaFLV": "9103732",
+        "idConvenioFLV": "1",
+        "idEstado": "2",
+        "Estado": "Validada con error",
+        "FechaCAMOyTE": "2015-11-02T15:31:08.757-03:00",
+        "RegID": "781eb2e9-c3af-4558-a975-0def148a0088"
+    },
+    "Table3": {
+        "error": "error en la receta"
+    }
+},
+//Previamente Procesada por Camoyte
+//2015110012900 reclamo edesur
+"Receta": {
+    "Table": {
+        "idRecetaFLV": "9103732",
+        "idConvenioFLV": "1",
+        "idEstado": "3",
+        "Estado": "Receta previamente Procesada por Camoyte",
+        "FechaCAMOyTE": "2015-11-02T15:31:08.757-03:00",
+        "RegID": "783eb2e9-c3af-4558-a975-0def148a0088"
+    }
+},
+//Aprobada
+
+"Receta": {
+    "Table": {
+        "idRecetaFLV": "6372773",
+        "idConvenioFLV": "1",
+        "idEstado": "4",
+        "Estado": "Aprobada",
+        "idDrogueria": "123",
+        "FechaCAMOyTE": "2015-09-11T13:23:33.193-03:00",
+        "FechaComunicacionDrogueria": "2015-09-29T13:39:14.387-03:00",
+        "Remito": "0005-00048084",
+        "FechaRemito": "2015-09-30T00:00:00-03:00",
+        "CodAp": "0G7I2S4",
+        "RegID": "9c71ab7e-f124-408d-99c0-f3bf7f16b03d"
+    },
+    "Table4": [{
+        "idRecetaFLV": "6372773",
+        "idProducto": "2043",
+        "Cantidad": "2"
+    }, {
+
+        "idRecetaFLV": "6372773",
+        "idProducto": "2044",
+        "Cantidad": "1"
+    }]
+}
