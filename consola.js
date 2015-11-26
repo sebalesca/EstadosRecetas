@@ -2,10 +2,12 @@ var readline = require('readline');
 var estado = require('./lib/verEstados');
 var colors = require('colors');
 var Receta = require('./lib/verEstados/lib/actualizarReceta');
+var recetaTest = require('./lib/verEstados/lib/recetaTest.js');
+var timer = require('timers');
 
 
 //var actualiza = require('./actualizarReceta');
-//var actRecetas=require('Recetas');
+var actRecetas = require('./lib/verEstados/lib/Recetas');
 var _ = require('underscore')._;
 var fs = require('fs');
 
@@ -28,7 +30,7 @@ function opciones() {
     console.log(' 1- Consultar Receta'.help);
     console.log(' 2- Consultar ETADOS Recetas Pendientes por Farmacia'.help);
     console.log(' 3- Actualizar Receta'.help);
-    //console.log(' 3- Actualizar Pendientes'.help);
+    console.log(' 4- Actualizar Cola'.help);
     //console.log(' 4- Actualizar Autorizadas'.help);
     //console.log(' 5- Actualizar Observadas'.help);
     console.log(' 6- Salir'.help);
@@ -49,7 +51,7 @@ rl.on('line', function(line) {
             rl.question("Introduzca el IdReceta a consultar: ", function(idreceta) {
                 estado.verEstado(idreceta, function(error, Receta) {
                     console.log('Detalle Receta'.yellow);
-                    console.log('Estado de la Receta: '.help + Receta.imprimir.estado.error);
+                    console.log('Estado de la Receta: '.help + Receta.imprimir.estado);
                     console.log(Receta.imprimir);
                     opciones();
                 });
@@ -75,12 +77,109 @@ rl.on('line', function(line) {
              */
             break;
         case '3':
-
-        case '4':
             //ACTUALIZA UNA RECETA SEGUN EL IDRECETA
             rl.question("Ingrese el ID de la receta Que desea ACTUALIZAR: ".info, function(idReceta) {
+
                 Receta.actualizarReceta(idReceta);
                 opciones();
+            });
+            break;
+        case '4':
+            rl.question('Desea Ejecutar el Demonio? ', function(pregunta) {
+                if (pregunta == 'S') {
+                    //son 20 minutos 1200000
+                    setInterval(function() {
+                        var cola = [8711714,
+                            8723010,
+                            8724074,
+                            8729068,
+                            8729757,
+                            8738609,
+                            8739129,
+                            8741175,
+                            8753165,
+                            8760330,
+                            8771166,
+                            8775701,
+                            8776116,
+                            8778534,
+                            8781803,
+                            8787123,
+                            8788467,
+                            8788824,
+                            8789868,
+                            8793086,
+                            8796390,
+                            8796600,
+                            8800219,
+                            8800657,
+                            8800758,
+                            8802204,
+                            8803009,
+                            8803146,
+                            8810612,
+                            8811290,
+                            8811292,
+                            8814444,
+                            8821960,
+                            8822824,
+                            8827951,
+                            8830743,
+                            8832669,
+                            8834173,
+                            8838144,
+                            8838562,
+                            8841299,
+                            8842459,
+                            8844597,
+                            8854225,
+                            8865946,
+                            8868633,
+                            8869328,
+                            8872073,
+                            8872771,
+                            8873121,
+                            8877188,
+                            8888219,
+                            8889547,
+                            8902501,
+                            8919208,
+                            8925113,
+                            8925392,
+                            8925830,
+                            8932526,
+                            8943127,
+                            8944274,
+                            8947867,
+                            8947970,
+                            8948800,
+                            8955045,
+                            8956650,
+                            8960600,
+                            8960792,
+                            8961620,
+                            8962370,
+                            8962693
+                        ];
+
+                        _.each(cola, function(recetaFLV, n) {
+                            console.log(recetaFLV + 'numero:' + n);
+                            Receta.actualizarReceta(recetaFLV);
+                        });
+                    }, 1000);
+                } else {
+                    opciones();
+
+                }
+
+
+                //actRecetas.getPendientes(function(error, pendientes) {
+                //  Receta.actualizarReceta(idReceta);
+
+                //});
+
+                //setIntervar(Receta.actualizarReceta(idReceta), 1200000);
+
             });
             break;
         case '5':
