@@ -164,9 +164,14 @@ rl.on('line', function(line) {
 
                         _.each(cola, function(recetaFLV, n) {
                             console.log(recetaFLV + 'numero:' + n);
-                            Receta.actualizarReceta(recetaFLV);
+                            Receta.actualizarReceta(recetaFLV,function(err,salida){
+                                if (err){
+                                    console.log('error idreceta: '+recetaFLV);
+                                }
+                                console.log('salida receta:'+recetaFLV+' es:'+salida);
+                            });
                         });
-                    }, 1000);
+                    }, 100000);
                 } else {
                     opciones();
 

@@ -4,7 +4,8 @@
   "description": "Consulta el estado de la Recetas en WS de ACES, con posibilidad de actualizar en Farma",
   "main": "consola.js",
   "scripts": {
-    "start": "nodemon consola.js"
+    "start": "nodemon consola.js",
+    "debug":"node-debug consola.js"
   },
   "author": "Sebastian Oscar Lescano",
   "license": "mit",
