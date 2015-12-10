@@ -166,7 +166,7 @@ rl.on('line', function(line) {
                             console.log(recetaFLV + 'numero:' + n);
                             Receta.actualizarReceta(recetaFLV,function(err,salida){
                                 if (err){
-                                    console.log('error idreceta: '+recetaFLV);
+                                    console.dir('error idreceta: '+err);
                                 }
                                 console.log('salida receta:'+recetaFLV+' es:'+salida);
                             });
