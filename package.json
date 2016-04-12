@@ -5,7 +5,7 @@
   "main": "consola.js",
   "scripts": {
     "start": "nodemon consola.js",
-    "debug":"node-debug consola.js"
+    "debug": "node-debug consola.js"
   },
   "author": "Sebastian Oscar Lescano",
   "license": "mit",
@@ -29,6 +29,7 @@
     "delayed": "^1.0.1",
     "nodemon": "1.3.7",
     "winston": "^2.0.0",
-    "winston-archivefile": "0.0.5"
+    "winston-archivefile": "0.0.5",
+    "mssql": "^2.3.2"
   }
-}
+}140981506571
